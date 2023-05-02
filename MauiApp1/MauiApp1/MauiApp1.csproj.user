@@ -7,4 +7,9 @@
     <SelectedPlatformGroup>Emulator</SelectedPlatformGroup>
     <DefaultDevice>pixel_5-api33</DefaultDevice>
   </PropertyGroup>
+  <ItemGroup>
+    <MauiXaml Update="AboutPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+  </ItemGroup>
 </Project>
