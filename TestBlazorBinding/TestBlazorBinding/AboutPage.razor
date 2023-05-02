@@ -1,0 +1,23 @@
+﻿@page "/about"
+
+<ContentPage>
+	<VerticalStackLayout Spacing="10" Margin="10">
+		<HorizontalStackLayout Spacing="10">
+			<Image Source="dotNetBotSource"
+					HeightRequest="64" 
+			></Image>
+			<Label FontSize="22" Text="Notes"/>
+			<Label FontSize="22" Text="v1.0" />
+		</HorizontalStackLayout>
+
+		 <Label Text="This app is written in XAML and C# with .NET MAUI." />
+
+		 <Button Text="Learn more..." Clicked="LearnMore_Clicked" />
+	</VerticalStackLayout>
+</ContentPage>
+
+@code {
+	ImageSource dotNetBotSource = ImageSource.FromFile("dotnet_bot.png");
+
+
+}
