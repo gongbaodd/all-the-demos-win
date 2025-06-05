@@ -1,21 +1,13 @@
-use bevy::{prelude::*, pbr::*};
+use bevy::{prelude::*};
+mod player;
+use player::PlayerPlugin;
+mod  camera;
+use camera::CameraPlugin;
+mod world;
+use world::WorldPlugin;
 
 fn main() {
     App::new()
-        .add_plugins(DefaultPlugins)
+        .add_plugins((DefaultPlugins, PlayerPlugin, CameraPlugin, WorldPlugin))
         .run();
-}
-
-fn spwan_floor(
-    mut commands: Commands,
-    mut meshes: ResMut<Assets<Mesh>>,
-    mut materials: ResMut<Assets<StandardMaterial>>
-) {
-    let floor = PbrBundle {
-        mesh: meshes.add(Mesh::from(shape::from_size(15.0))),
-        material: materials.add(Color::DARK_GREEN.into()),
-        ..default()
-    };
-
-    commands.spawn(floor);
 }
