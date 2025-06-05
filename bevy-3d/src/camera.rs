@@ -1,5 +1,6 @@
 use bevy::{prelude::*};
 
+
 pub struct CameraPlugin;
 
 impl Plugin for CameraPlugin {

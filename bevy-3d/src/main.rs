@@ -1,4 +1,5 @@
 use bevy::{prelude::*};
+
 mod player;
 use player::PlayerPlugin;
 mod  camera;
