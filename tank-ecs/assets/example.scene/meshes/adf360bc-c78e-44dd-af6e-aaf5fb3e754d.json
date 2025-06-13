@@ -1,13 +1,13 @@
 {
     "meshes": [
         {
-            "name": "Tank",
-            "id": "854c04a5-f055-46aa-912c-fe7c16ee2fda",
-            "uniqueId": 1749810615883,
+            "name": "Turret",
+            "id": "adf360bc-c78e-44dd-af6e-aaf5fb3e754d",
+            "uniqueId": 1749824037669,
             "type": "Mesh",
             "position": [
                 0,
-                0.5,
+                1,
                 0
             ],
             "rotationQuaternion": [
@@ -17,9 +17,9 @@
                 1
             ],
             "scaling": [
+                0.5000002980232239,
                 0.5,
-                0.5,
-                0.5
+                0.5000001788139343
             ],
             "localMatrix": [
                 1,
@@ -62,13 +62,13 @@
             "isBlocker": false,
             "sideOrientation": 0,
             "isUnIndexed": false,
-            "geometryUniqueId": 1749810615886,
-            "geometryId": "ffe0b8c1-a27c-4f0a-8ad2-8da3bbbdc10d",
+            "geometryUniqueId": 1749824037673,
+            "geometryId": "2f5794b8-8629-473e-954d-38cf8e16cb87",
             "subMeshes": null,
-            "materialUniqueId": 1749810615887,
-            "materialId": "2c6bfabb-13a6-45ad-89f9-5adae47b8b87",
+            "materialUniqueId": 1749824037676,
+            "materialId": "8aaa15ff-8362-46cb-ab65-24124679f2ef",
             "metadata": {
-                "parentId": 1749810615882
+                "parentId": 1749824037667
             },
             "instances": [],
             "animations": [],
@@ -84,46 +84,46 @@
             ],
             "renderOverlay": true,
             "applyFog": true,
-            "delayLoadingFile": "assets/example.scene/geometries/ffe0b8c1-a27c-4f0a-8ad2-8da3bbbdc10d.babylonbinarymeshdata",
+            "delayLoadingFile": "assets/example.scene/geometries/2f5794b8-8629-473e-954d-38cf8e16cb87.babylonbinarymeshdata",
             "boundingBoxMaximum": [
+                0.9999997019767761,
                 1,
-                1,
-                1
+                0.9999993443489075
             ],
             "boundingBoxMinimum": [
-                -1,
+                -0.9999990463256836,
                 -1,
                 -1
             ],
             "_binaryInfo": {
                 "positionsAttrDesc": {
-                    "count": 72,
+                    "count": 1677,
                     "stride": 3,
                     "offset": 0,
                     "dataType": 1
                 },
                 "normalsAttrDesc": {
-                    "count": 72,
+                    "count": 1677,
                     "stride": 3,
-                    "offset": 288,
+                    "offset": 6708,
                     "dataType": 1
                 },
                 "uvsAttrDesc": {
-                    "count": 48,
+                    "count": 1118,
                     "stride": 2,
-                    "offset": 576,
+                    "offset": 13416,
                     "dataType": 1
                 },
                 "indicesAttrDesc": {
-                    "count": 36,
+                    "count": 2880,
                     "stride": 1,
-                    "offset": 768,
+                    "offset": 17888,
                     "dataType": 0
                 },
                 "subMeshesAttrDesc": {
                     "count": 1,
                     "stride": 5,
-                    "offset": 912,
+                    "offset": 29408,
                     "dataType": 0
                 }
             },
@@ -147,8 +147,8 @@
             "disableBumpMap": false,
             "ambientTextureStrength": 1,
             "ambientTextureImpactOnAnalyticalLights": 0,
-            "metallic": 0,
-            "roughness": 0.5,
+            "metallic": 1,
+            "roughness": 1,
             "metallicF0Factor": 1,
             "metallicReflectanceColor": [
                 1,
@@ -162,9 +162,9 @@
                 0
             ],
             "albedo": [
-                0.800000011920929,
-                0.800000011920929,
-                0.800000011920929
+                1,
+                1,
+                1
             ],
             "baseWeight": 1,
             "reflectivity": [
@@ -207,7 +207,7 @@
             "maxSimultaneousLights": 32,
             "invertNormalMapX": false,
             "invertNormalMapY": false,
-            "twoSidedLighting": true,
+            "twoSidedLighting": false,
             "useAlphaFresnel": false,
             "useLinearAlphaFresnel": false,
             "forceNormalForward": false,
@@ -262,14 +262,13 @@
                 "outputTextureWidth": 0,
                 "outputTextureHeight": 0
             },
-            "id": "2c6bfabb-13a6-45ad-89f9-5adae47b8b87",
-            "name": "Material",
-            "metadata": {},
+            "id": "8aaa15ff-8362-46cb-ab65-24124679f2ef",
+            "name": "__GLTFLoader._default",
             "checkReadyOnEveryCall": false,
             "checkReadyOnlyOnce": false,
             "state": "",
             "alpha": 1,
-            "backFaceCulling": false,
+            "backFaceCulling": true,
             "cullBackFaces": true,
             "alphaMode": 2,
             "_needDepthPrePass": false,
@@ -296,7 +295,7 @@
                 "mask": 255,
                 "enabled": false
             },
-            "uniqueId": 1749810615887,
+            "uniqueId": 1749824037676,
             "plugins": {
                 "PBRBRDFConfiguration": {
                     "tags": null,
@@ -447,23 +446,23 @@
         "vertexData": []
     },
     "metadata": {
-        "parentId": 1749810615882
+        "parentId": 1749824037667
     },
     "basePoseMatrix": [
+        -1.999998807907815,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        1.9999992847445185,
+        0,
+        0,
         -2,
-        0,
-        0,
-        0,
-        0,
-        2,
-        0,
-        0,
-        0,
-        0,
-        2,
-        0,
-        0,
-        -1,
         0,
         1
     ]

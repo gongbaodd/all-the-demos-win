@@ -1,25 +1,25 @@
 {
     "meshes": [
         {
-            "name": "Cannon",
-            "id": "a30e46d7-a5a5-42d5-9dd5-8e2453c9aed5",
-            "uniqueId": 1749810615885,
+            "name": "Tank",
+            "id": "69353217-c27d-4f1f-bb0b-31a0758d0504",
+            "uniqueId": 1749824037668,
             "type": "Mesh",
             "position": [
                 0,
-                1,
+                0.5,
                 0
             ],
             "rotationQuaternion": [
-                -0.3826834559440613,
                 0,
                 0,
-                0.9238795638084412
+                0,
+                1
             ],
             "scaling": [
-                0.125,
-                0.4999999701976776,
-                0.1249999925494194
+                0.5,
+                0.5,
+                0.5
             ],
             "localMatrix": [
                 1,
@@ -62,13 +62,14 @@
             "isBlocker": false,
             "sideOrientation": 0,
             "isUnIndexed": false,
-            "geometryUniqueId": 1749810615890,
-            "geometryId": "fa5da8a2-d870-48d4-a733-a2f43236729a",
+            "geometryUniqueId": 1749824037671,
+            "geometryId": "6d01c031-83e1-40da-8cc5-f96ef5a91695",
             "subMeshes": null,
-            "materialUniqueId": 1749810615891,
-            "materialId": "bb5b8e1b-1107-4442-bc9b-5f5600a25508",
+            "materialUniqueId": 1749824037672,
+            "materialId": "e6e4632d-52f2-472b-97ca-8e009a4a7eb9",
             "metadata": {
-                "parentId": 1749810615882
+                "parentId": 1749824037667,
+                "scripts": []
             },
             "instances": [],
             "animations": [],
@@ -84,46 +85,46 @@
             ],
             "renderOverlay": true,
             "applyFog": true,
-            "delayLoadingFile": "assets/example.scene/geometries/fa5da8a2-d870-48d4-a733-a2f43236729a.babylonbinarymeshdata",
+            "delayLoadingFile": "assets/example.scene/geometries/6d01c031-83e1-40da-8cc5-f96ef5a91695.babylonbinarymeshdata",
             "boundingBoxMaximum": [
                 1,
-                2,
+                1,
                 1
             ],
             "boundingBoxMinimum": [
                 -1,
-                0,
+                -1,
                 -1
             ],
             "_binaryInfo": {
                 "positionsAttrDesc": {
-                    "count": 576,
+                    "count": 72,
                     "stride": 3,
                     "offset": 0,
                     "dataType": 1
                 },
                 "normalsAttrDesc": {
-                    "count": 576,
+                    "count": 72,
                     "stride": 3,
-                    "offset": 2304,
+                    "offset": 288,
                     "dataType": 1
                 },
                 "uvsAttrDesc": {
-                    "count": 384,
+                    "count": 48,
                     "stride": 2,
-                    "offset": 4608,
+                    "offset": 576,
                     "dataType": 1
                 },
                 "indicesAttrDesc": {
-                    "count": 372,
+                    "count": 36,
                     "stride": 1,
-                    "offset": 6144,
+                    "offset": 768,
                     "dataType": 0
                 },
                 "subMeshesAttrDesc": {
                     "count": 1,
                     "stride": 5,
-                    "offset": 7632,
+                    "offset": 912,
                     "dataType": 0
                 }
             },
@@ -147,8 +148,8 @@
             "disableBumpMap": false,
             "ambientTextureStrength": 1,
             "ambientTextureImpactOnAnalyticalLights": 0,
-            "metallic": 1,
-            "roughness": 1,
+            "metallic": 0,
+            "roughness": 0.5,
             "metallicF0Factor": 1,
             "metallicReflectanceColor": [
                 1,
@@ -162,9 +163,9 @@
                 0
             ],
             "albedo": [
-                1,
-                1,
-                1
+                0.800000011920929,
+                0.800000011920929,
+                0.800000011920929
             ],
             "baseWeight": 1,
             "reflectivity": [
@@ -207,7 +208,7 @@
             "maxSimultaneousLights": 32,
             "invertNormalMapX": false,
             "invertNormalMapY": false,
-            "twoSidedLighting": false,
+            "twoSidedLighting": true,
             "useAlphaFresnel": false,
             "useLinearAlphaFresnel": false,
             "forceNormalForward": false,
@@ -262,13 +263,14 @@
                 "outputTextureWidth": 0,
                 "outputTextureHeight": 0
             },
-            "id": "bb5b8e1b-1107-4442-bc9b-5f5600a25508",
-            "name": "__GLTFLoader._default",
+            "id": "e6e4632d-52f2-472b-97ca-8e009a4a7eb9",
+            "name": "Material",
+            "metadata": {},
             "checkReadyOnEveryCall": false,
             "checkReadyOnlyOnce": false,
             "state": "",
             "alpha": 1,
-            "backFaceCulling": true,
+            "backFaceCulling": false,
             "cullBackFaces": true,
             "alphaMode": 2,
             "_needDepthPrePass": false,
@@ -295,7 +297,7 @@
                 "mask": 255,
                 "enabled": false
             },
-            "uniqueId": 1749810615891,
+            "uniqueId": 1749824037672,
             "plugins": {
                 "PBRBRDFConfiguration": {
                     "tags": null,
@@ -446,24 +448,25 @@
         "vertexData": []
     },
     "metadata": {
-        "parentId": 1749810615882
+        "parentId": 1749824037667,
+        "scripts": []
     },
     "basePoseMatrix": [
-        -8,
+        -2,
         0,
         0,
         0,
         0,
-        1.4142135116226573,
-        5.656854875412185,
+        2,
         0,
         0,
-        -1.4142137188530461,
-        5.656854046490629,
         0,
         0,
-        -1.4142135116226573,
-        -5.656854875412185,
+        2,
+        0,
+        0,
+        -1,
+        0,
         1
     ]
 }

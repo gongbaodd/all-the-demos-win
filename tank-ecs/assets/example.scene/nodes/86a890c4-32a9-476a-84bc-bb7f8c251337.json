@@ -1,0 +1,57 @@
+{
+    "tags": null,
+    "position": [
+        0,
+        0,
+        0
+    ],
+    "rotation": [
+        0,
+        0,
+        0
+    ],
+    "scaling": [
+        1,
+        1,
+        1
+    ],
+    "billboardMode": 0,
+    "scalingDeterminant": 1,
+    "infiniteDistance": false,
+    "ignoreNonUniformScaling": false,
+    "reIntegrateRotationIntoRotationQuaternion": false,
+    "name": "TankTransform",
+    "id": "86a890c4-32a9-476a-84bc-bb7f8c251337",
+    "state": "",
+    "metadata": {
+        "scripts": [
+            {
+                "enabled": true,
+                "key": "scripts/tankCar.ts"
+            }
+        ]
+    },
+    "type": "TransformNode",
+    "uniqueId": 1749824189794,
+    "localMatrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+    ],
+    "isEnabled": true,
+    "animations": [],
+    "ranges": []
+}

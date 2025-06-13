@@ -1,9 +1,9 @@
 {
     "meshes": [
         {
-            "name": "Turret",
-            "id": "2a424ef8-5b85-4b89-a174-8d932a8c8615",
-            "uniqueId": 1749810615884,
+            "name": "Cannon",
+            "id": "7eeafb39-b97a-4df5-af01-95785e6ca504",
+            "uniqueId": 1749824037670,
             "type": "Mesh",
             "position": [
                 0,
@@ -11,15 +11,15 @@
                 0
             ],
             "rotationQuaternion": [
+                -0.3826834559440613,
                 0,
                 0,
-                0,
-                1
+                0.9238795638084412
             ],
             "scaling": [
-                0.5000002980232239,
-                0.5,
-                0.5000001788139343
+                0.125,
+                0.4999999701976776,
+                0.1249999925494194
             ],
             "localMatrix": [
                 1,
@@ -62,13 +62,13 @@
             "isBlocker": false,
             "sideOrientation": 0,
             "isUnIndexed": false,
-            "geometryUniqueId": 1749810615888,
-            "geometryId": "dec87087-6305-4abb-a7d1-de4ddc5f3da8",
+            "geometryUniqueId": 1749824037675,
+            "geometryId": "64c43479-c8db-48fb-85fb-f09c11fe32e3",
             "subMeshes": null,
-            "materialUniqueId": 1749810615891,
-            "materialId": "bb5b8e1b-1107-4442-bc9b-5f5600a25508",
+            "materialUniqueId": 1749824037676,
+            "materialId": "8aaa15ff-8362-46cb-ab65-24124679f2ef",
             "metadata": {
-                "parentId": 1749810615882
+                "parentId": 1749824037667
             },
             "instances": [],
             "animations": [],
@@ -76,54 +76,53 @@
             "layerMask": 268435455,
             "alphaIndex": 1.7976931348623157e+308,
             "hasVertexAlpha": false,
-            "overlayAlpha": 0,
+            "overlayAlpha": 0.5,
             "overlayColor": [
-                0,
+                1,
                 0,
                 0
             ],
-            "renderOverlay": true,
             "applyFog": true,
-            "delayLoadingFile": "assets/example.scene/geometries/dec87087-6305-4abb-a7d1-de4ddc5f3da8.babylonbinarymeshdata",
+            "delayLoadingFile": "assets/example.scene/geometries/64c43479-c8db-48fb-85fb-f09c11fe32e3.babylonbinarymeshdata",
             "boundingBoxMaximum": [
-                0.9999997019767761,
                 1,
-                0.9999993443489075
+                2,
+                1
             ],
             "boundingBoxMinimum": [
-                -0.9999990463256836,
                 -1,
+                0,
                 -1
             ],
             "_binaryInfo": {
                 "positionsAttrDesc": {
-                    "count": 1677,
+                    "count": 576,
                     "stride": 3,
                     "offset": 0,
                     "dataType": 1
                 },
                 "normalsAttrDesc": {
-                    "count": 1677,
+                    "count": 576,
                     "stride": 3,
-                    "offset": 6708,
+                    "offset": 2304,
                     "dataType": 1
                 },
                 "uvsAttrDesc": {
-                    "count": 1118,
+                    "count": 384,
                     "stride": 2,
-                    "offset": 13416,
+                    "offset": 4608,
                     "dataType": 1
                 },
                 "indicesAttrDesc": {
-                    "count": 2880,
+                    "count": 372,
                     "stride": 1,
-                    "offset": 17888,
+                    "offset": 6144,
                     "dataType": 0
                 },
                 "subMeshesAttrDesc": {
                     "count": 1,
                     "stride": 5,
-                    "offset": 29408,
+                    "offset": 7632,
                     "dataType": 0
                 }
             },
@@ -262,7 +261,7 @@
                 "outputTextureWidth": 0,
                 "outputTextureHeight": 0
             },
-            "id": "bb5b8e1b-1107-4442-bc9b-5f5600a25508",
+            "id": "8aaa15ff-8362-46cb-ab65-24124679f2ef",
             "name": "__GLTFLoader._default",
             "checkReadyOnEveryCall": false,
             "checkReadyOnlyOnce": false,
@@ -295,7 +294,7 @@
                 "mask": 255,
                 "enabled": false
             },
-            "uniqueId": 1749810615891,
+            "uniqueId": 1749824037676,
             "plugins": {
                 "PBRBRDFConfiguration": {
                     "tags": null,
@@ -446,24 +445,24 @@
         "vertexData": []
     },
     "metadata": {
-        "parentId": 1749810615882
+        "parentId": 1749824037667
     },
     "basePoseMatrix": [
-        -1.999998807907815,
+        -8,
         0,
         0,
         0,
         0,
-        2,
+        1.4142135116226573,
+        5.656854875412185,
         0,
         0,
+        -1.4142137188530461,
+        5.656854046490629,
         0,
         0,
-        1.9999992847445185,
-        0,
-        0,
-        -2,
-        0,
+        -1.4142135116226573,
+        -5.656854875412185,
         1
     ]
 }

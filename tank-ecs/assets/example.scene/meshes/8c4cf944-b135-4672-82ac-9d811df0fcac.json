@@ -1,9 +1,9 @@
 {
     "meshes": [
         {
-            "name": "TankCar",
-            "id": "79f1b944-2525-4788-a65f-d072fa3b6a7c",
-            "uniqueId": 1749810615882,
+            "name": "__root__",
+            "id": "8c4cf944-b135-4672-82ac-9d811df0fcac",
+            "uniqueId": 1749824037667,
             "type": "Mesh",
             "position": [
                 0,
@@ -65,12 +65,8 @@
             "materialUniqueId": 26,
             "materialId": "default material",
             "metadata": {
-                "scripts": [
-                    {
-                        "enabled": true,
-                        "key": "scripts/tankCar.ts"
-                    }
-                ]
+                "scripts": [],
+                "parentId": 1749824189794
             },
             "instances": [],
             "animations": [],
@@ -92,12 +88,8 @@
     "lights": [],
     "materials": [],
     "metadata": {
-        "scripts": [
-            {
-                "enabled": true,
-                "key": "scripts/tankCar.ts"
-            }
-        ]
+        "scripts": [],
+        "parentId": 1749824189794
     },
     "basePoseMatrix": [
         -1,
