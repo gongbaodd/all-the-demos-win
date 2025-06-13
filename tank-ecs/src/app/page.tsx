@@ -1,6 +1,6 @@
 "use client";
 
-import { Suspense, use, useEffect, useRef } from "react";
+import { Suspense, useEffect, useRef } from "react";
 
 import { Scene } from "@babylonjs/core/scene";
 import { Engine } from "@babylonjs/core/Engines/engine";
@@ -118,7 +118,7 @@ function HomeComponent() {
 
         SceneLoaderFlags.ForceFullSceneLoadingForIncremental = true;
         await loadScene("/scene/", "example.babylon", scene, scriptsMap, {
-            quality: "high",
+            // quality: "high",
         });
 
         if (scene.activeCamera) {
