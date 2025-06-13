@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { Suspense, useEffect, useRef } from "react";
 
 import { Scene } from "@babylonjs/core/scene";
 import { Engine } from "@babylonjs/core/Engines/engine";
@@ -43,6 +43,16 @@ import { loadScene } from "babylonjs-editor-tools";
 import { scriptsMap } from "@/scripts";
 
 export default function Home() {
+    return (
+        <main className="flex w-screen h-screen flex-col items-center justify-between">
+            <Suspense fallback={<div>Loading...</div>}>
+                <HomeComponent />
+            </Suspense>
+        </main>
+    )
+}
+
+function HomeComponent() {
     const canvasRef = useRef<HTMLCanvasElement>(null);
 
     useEffect(() => {
