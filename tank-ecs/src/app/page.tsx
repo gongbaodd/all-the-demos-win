@@ -32,6 +32,7 @@ import "@babylonjs/core/Materials/Textures/Loaders/envTextureLoader";
 import "@babylonjs/core/Physics";
 
 import "@babylonjs/materials/sky";
+// import "@babylonjs/inspector";
 
 import { loadScene } from "babylonjs-editor-tools";
 
@@ -115,6 +116,7 @@ function HomeComponent() {
         const havok = await HavokPhysics();
 
         scene.enablePhysics(new Vector3(0, -981, 0), new HavokPlugin(true, havok));
+        // scene.debugLayer.show();
 
         SceneLoaderFlags.ForceFullSceneLoadingForIncremental = true;
         await loadScene("/scene/", "example.babylon", scene, scriptsMap, {
