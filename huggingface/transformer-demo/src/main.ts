@@ -1,24 +1,26 @@
 import './style.css'
-import typescriptLogo from './typescript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.ts'
+import { pipeline } from "@huggingface/transformers";
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank">
-      <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
-    </a>
-    <h1>Vite + TypeScript</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
-    </p>
-  </div>
-`
+async function main() {
+  // const reviewer = await pipeline('sentiment-analysis', 'Xenova/bert-base-multilingual-uncased-sentiment');
+  // const result = await reviewer('The Shawshank Redemption is a true masterpiece of cinema.');
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+  // console.log(result);
+
+  // const pipe = await pipeline('feature-extraction', 'Xenova/all-MiniLM-L6-v2', {
+  //   dtype: "fp32",
+  // });
+
+  const translator = await pipeline('translation', 'Xenova/nllb-200-distilled-600M', {
+    progress_callback: (progress) => {
+      console.log(`Progress: ${JSON.stringify(progress)}`);
+    }
+  });
+  const result = await translator('Hello, how are you?', {
+    src_lang: 'eng_Latn',
+    tgt_lang: 'ell_Grek'
+   });
+   console.log(result);
+}
+
+main().catch(console.error);
